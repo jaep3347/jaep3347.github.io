@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Bun Bun Bakery </title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="products.css">
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <div id = "wrapper">
+
+    <!-- Navigation Bar -->
+    <div id="navbar">
+      <nav>
+          <!-- Logo, which also redirects to homepage (follow convention)-->
+          <a href = "index.html"> <img src = "images/logo.png" class = "logo" alt = "Bun Bun Bakery"> </a>
+          <!-- Menu Buttons -->
+          <ul class = "buttons">
+              <li> <a href = "cart.html" class = "nav-button"> Cart </a> </li>
+              <li> <a href = "sign_in.html" class = "nav-button"> Sign In </a> </li>
+              <li> <a href = "menu.html" class = "nav-button"> Menu </a> </li>
+              <li> <a href="about.html" class = "nav-button"> About Us </a> </li>
+              <li> <a href="index.html" class = "nav-button"> Home </a> </li>
+          </ul>
+      </nav>
+    </div>
+
+
+
+
+  <main class="container">
+
+      <!-- Left Column Image -->
+      <div class="left-column">
+        <img src="images/original.png" alt="Original Buns">
+
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Cinnamon Buns</span>
+          <h1>Original Rolls</h1>
+          <p>Choose your option of glazing and quantity below</p>
+        </div>
+
+        <!-- Options -->
+        <div class="product-configuration">
+
+          <!-- Product Glazing -->
+          <div class="product-quantity">
+            <span>Quantity: &nbsp;</span>
+              <select class = "dropdown-one">
+                <option value = "1"> 1 Roll </option>
+                <option value = "3"> 3 Rolls </option>
+                <option value = "6"> 6 Rolls </option>
+                <option value = "12"> 12 Rolls </option>
+              </select>
+          </div>
+
+          <!-- Product Glazing -->
+          <div class="glazing">
+            <span>Glazing: </span>
+
+            <div class="glazing-choose">
+              <button>None</button>
+              <button>Sugar-Milk</button>
+              <button>Vanilla-Milk</button>
+              <button>Double-Chocolate</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>$3.00 per roll</span>
+          <a href="#" class="cart-btn">Add to cart</a>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Description')">Description</button>
+      <button class="tablinks" onclick="openTab(event, 'Review')">Review</button>
+    </div>
+
+    <div id="Description" class="tabcontent">
+      <h3>Description</h3>
+      <p>Our original rolls are a must-try if you are a first time visitor to Pittsburgh.
+        It is one of our best-seller product on the menu!
+        <br /><br />
+        <b>Warning:</b>
+        The following product includes dairy products such as milk, egg and whole cream.
+        Lactose Intolerant customers can look at our gluten-free option from the menu.
+        <br /><br />
+        <b>List of Ingredients:</b>
+        Flour, Egg, Sugar, Salt, Vanilla Extract, Cinnamon Powder, Whipped Cream, Milk, Butter, Cream Cheese
+      </p>
+    </div>
+
+    <div id="Review" class="tabcontent">
+      <h3>Reviews</h3>
+      <p>Reviews to be written</p>
+    </div>
+
+
+
+  <!-- taken from https://www.w3schools.com/howto/howto_js_tabs.asp -->
+  <script>
+  function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class = "footer-left"> <img src="images/social.png" alt="Social"> </div>
+      <div class = "footer-center"> @ Bun Bun Bake Shop <br> All rights reserved</div>
+      <div class = "footer-right"> <img src="images/cards.png" alt="Cards"> </div>
+    </footer>
+
+  </div>
+
+</body>
+
+
+</html>

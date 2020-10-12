@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Bun Bun Bakery </title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Imported font-awesome only for the star-rating, which was extra work -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <div id = "wrapper">
+
+    <!-- Navigation Bar -->
+    <div id="navbar">
+      <nav>
+          <!-- Logo, which also redirects to homepage (follow convention)-->
+          <a href = "index.html"> <img src = "images/logo.png" class = "logo" alt = "Bun Bun Bakery"> </a>
+          <!-- Menu Buttons -->
+          <ul class = "buttons">
+              <li> <a href = "cart.html" class = "nav-button"> Cart </a> </li>
+              <li> <a href = "sign_in.html" class = "nav-button"> Sign In </a> </li>
+              <li> <a href = "menu.html" class = "nav-button"> Menu </a> </li>
+              <li> <a href="about.html" class = "nav-button"> About Us </a> </li>
+              <li> <a href="index.html" class = "nav-button"> Home </a> </li>
+          </ul>
+      </nav>
+    </div>
+
+    <!-- Small Banner -->
+    <div class = "about-banner" id = "getrollin">
+        <h1> Get Rollin' </h1>
+        <h2> Our rolls are baked freshly, everyday </h2>
+    </div>
+
+    <!-- Filter and Search Bar -->
+    <img class = "leftoption" src="images/searchbar.png" alt="Search"  />
+    <img class = "rightoption" src="images/filter.png" alt="Filter"  />
+
+    <!-- Browse Products -->
+    <div id="browse">
+      <div class="row">
+        <div class="card">
+          <a href="original.html">
+            <img src="images/original.png" alt="Original Buns" style="width:100%">
+          </a>
+            <a href="original.html"> <h2>Original</h2> </a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="price">$3.00 per roll</p>
+        </div>
+
+        <div class="card">
+          <a href="blackberry.html">
+            <img src="images/blackberry.png" alt="Blackberry Buns" style="width:100%">
+          </a>
+            <a href="blackberry.html"> <h2>Blackberry</h2> </a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p class="price">$3.50 per roll</p>
+        </div>
+
+        <div class="card">
+          <a href="walnut.html">
+            <img src="images/walnut.png" alt="Walnut Buns" style="width:100%">
+          </a>
+            <a href="walnut.html"> <h2>Walnut</h2> </a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="price">$3.75 per roll</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <a href="original_gluten.html">
+            <img src="images/original.png" alt="Original(Gluten-Free) Buns" style="width:100%">
+          </a>
+            <a href="original.html"> <h2>Original (Gluten-Free)</h2> </a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p class="price">$3.00 per roll</p>
+        </div>
+
+        <div class="card">
+          <a href="pumpkinspice.html">
+            <img src="images/pumpkin.png" alt="Pumpkin Spice Buns" style="width:100%">
+          </a>
+            <a href="pumpkinspice.html"> <h2>Pumpkin Spice</h2> </a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p class="price">$3.50 per roll</p>
+        </div>
+
+        <div class="card">
+          <a href="caramelpecan.html">
+            <img src="images/caramelpecan.png" alt="Caramel Pecan Buns" style="width:100%">
+          </a>
+            <a href="caramelpecan.html"> <h2>Caramel Pecan</h2> </a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p class="price">$3.50 per roll</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class = "footer-left"> <img src="images/social.png" alt="Social"> </div>
+      <div class = "footer-center"> @ Bun Bun Bake Shop <br> All rights reserved</div>
+      <div class = "footer-right"> <img src="images/cards.png" alt="Cards"> </div>
+    </footer>
+
+  </div>
+
+</body>
+
+
+</html>
