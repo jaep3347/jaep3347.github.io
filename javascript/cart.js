@@ -1,3 +1,4 @@
+// create a list from session storage
 function createItemList(cart) {
   for (i = 0; i < cart.length; i++) {
     var item = cart[i];
@@ -17,5 +18,7 @@ $(document).ready(function() {
   if (!cart.length == 0) {
     $("#no-item").remove();
     createItemList(cart);
+  } else {
+    $("#summary").remove();
   }
 });

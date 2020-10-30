@@ -1,3 +1,4 @@
+// Constructor
 function Product(name, image, price, quantity, glazing) {
   this.name = name;
   this.image = image;
@@ -13,6 +14,7 @@ function selectGlazing(product, glazing) {
   $('#'+glazing).css("border", "2px solid #86939E");
 }
 
+// Counts how many cinnamon rolls are in the cart
 function updateItemCount(cart) {
   var count = 0;
   for (i=0; i<cart.length; i++) {
@@ -31,6 +33,7 @@ function addToCart(cart, product) {
   cart.push(product);
 }
 
+// for flash message when adding to cart
 function showConfirmation()
 {
     $('#flash').html("Successfully added item to cart!");
