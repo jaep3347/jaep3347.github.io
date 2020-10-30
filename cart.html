@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Bun Bun Bakery </title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/cart.css" />
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascript/product.js"></script>
+  <script src="javascript/cart.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="contents">
+      <!-- Navigation Bar -->
+      <div id="navbar">
+        <nav>
+          <!-- Logo, which also redirects to homepage (follow convention)-->
+          <a href="index.html"> <img src="images/logo.png" class="logo" alt="Bun Bun Bakery"> </a>
+          <!-- Menu Buttons -->
+          <ul class="buttons">
+            <li>
+              <img class="icon" src="images/cart.png" alt="" />
+              <a href="cart.html" id="item-count">0 Items</a>
+            </li>
+            <li>
+              <img class="icon2" src="images/profile.png" alt="" />
+              <a href="sign_in.html" class="nav-button"> Sign In </a>
+            </li>
+            <li> <a href="menu.html" class="nav-button"> Menu </a> </li>
+            <li> <a href="about.html" class="nav-button"> About Us </a> </li>
+            <li> <a href="index.html" class="nav-button"> Home </a> </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <!-- Title -->
+        <header>
+            <h1>Shopping Cart</h1>
+            <a href="menu.html" class="edit">BACK TO SHOPPING</a>
+        </header>
+        <!-- Default "No-Item" Message -->
+        <!-- Will be deleted by Javascript when there are items in the cart -->
+        <h1 id="no-item">There's no item in your cart!</h1>
+        <!-- Product Information -->
+        <div id="shopping-cart">
+            <!-- Place-holder for list of items in shopping cart -->
+            <!-- Items will be added to the list by Javascript when the page is loaded -->
+            <ul id="cart-items">
+            </ul>
+        </div>
+        <!-- Summary -->
+        <div id = "summary">
+            <!-- Item summary - subtotal, tax, shipping, and estimated total -->
+            <ol>
+                <li><div class="main-summary">Subtotal<div class="summary-price" id="subtotal">$5.00</div></div></li>
+                <li><div class="main-summary">Tax<div class="summary-price" id="tax">$1.25</div></div></li>
+                <li><div class="main-summary">Shipping<div class="summary-price">$1.25</div></div></li>
+                <li><div class="main-summary">Estimated Total<div class="summary-price" id="estimated-total">$7.50</div></div></li>
+            <!-- Checkout -->
+            </ol>
+            <a href="#" id="checkout">Checkout</a>
+        </div>
+
+
+
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-left"> <img src="images/social.png" alt="Social"> </div>
+      <div class="footer-center"> @ Bun Bun Bake Shop <br> &nbsp;&nbsp;&nbsp;&nbsp; All rights reserved</div>
+      <div class="footer-right"> <img src="images/cards.png" alt="Cards"> </div>
+    </footer>
+  </div>
+
+</body>
+
+
+</html>

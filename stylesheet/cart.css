@@ -1,0 +1,158 @@
+header {
+  margin-top: 50px;
+  margin-left: 10%;
+  font-size: 24px;
+  text-align: left;
+  color: #444444;
+}
+
+h1 {
+    color: #666666;
+    margin: 10px;
+}
+
+/* Basic Styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 74em;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+#shopping-cart {
+    width: 52%;
+    position: relative;
+    float: left;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
+#no-item {
+    margin-top: 75px;
+    font-size: 36px;
+    font-family: serif;
+    color: #666666;
+    text-align: center;
+}
+
+#summary {
+    width: 32%;
+    position: relative;
+    font-size: 20px;
+    float: right;
+    margin-right: 8%;
+    margin-top: 1.4%;
+}
+
+/* #checkout {
+    margin-left: 7.5%;
+} */
+
+#checkout {
+  margin-left: 71%;
+  margin-top: 5%;
+  display: inline-block;
+  background-color: #FFC600;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 16px 21px;
+  transition: all .5s;
+}
+#checkout:hover {
+  background-color: orange;
+}
+
+.edit {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #AAAAAA;
+    font-size: 14px;
+    font-family: 'Avenir', serif;
+    text-decoration: underline;
+}
+
+.small-pic {
+    margin-top: 5px;
+    padding-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    float: left;
+}
+
+.cart-text {
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-left: 25px;
+    color: #AAAAAA;
+    font-size: 20px;
+    float: left;
+}
+
+.cart-subtext {
+    margin-top: 0px;
+    padding-top: 10px;
+    color: #DDDDDD;
+    font-size: 15px;
+}
+
+.cart-num {
+    position: absolute;
+    padding-top: 36px;
+    color: #AAAAAA;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    float: left;
+    margin-left: 40%;
+}
+
+
+.cart-cross {
+    position: absolute;
+    padding-top: 38px;
+    width: 18px;
+    float: right;
+    margin-left: 40%;
+}
+
+.main-summary {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #666666;
+}
+
+.summary-price {
+    position: absolute;
+    right: 10%;
+    color: #666666;
+    float: right;
+    display: inline;
+}
+
+#add-to-cart {
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+
+li {
+    margin-top: 20px;
+    display: table;
+}
+
+ol {
+    list-style: none;
+}

@@ -7,27 +7,48 @@ html, body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 74em;
   margin: 0 auto;
   padding: 15px;
   display: flex;
 }
 
 /* Columns */
-.left-column {
-  width: 65%;
+.left-column-left {
+  width: 30%;
   position: relative;
+
+}
+
+.left-column-right {
+  width: 30%;
+  position:relative;
+  margin-top: 105px;
+  margin-left: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
 }
 
 .right-column {
-  width: 35%;
+  width: 40%;
   margin-top: 60px;
 }
 
 
-/* Left Column */
-.left-column img {
-  width: 50%;
+/* Left Column Left Image */
+.left-column-left img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 59px;
+}
+
+/* Left Column Right Image */
+.left-column-right img {
+  width: 70%;
   position: absolute;
   left: 0;
   top: 0;
@@ -78,6 +99,10 @@ html, body {
 .glazing-choose button:focus {
   border: 2px solid #86939E;
   outline: none;
+}
+
+.glazing-choose #none {
+  border: 2px solid #86939E;
 }
 
 .glazing {
