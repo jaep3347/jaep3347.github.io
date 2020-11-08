@@ -163,15 +163,6 @@ nav ul li a:visited {
 /* Footer CSS */
 footer {
     background-color: #F6F4F4;
-    /* position: fixed; */
-    /* left: 0;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
-    overflow: hidden;
-    color: grey; */
-
-    /* margin-top: 54px; */
     width: 100%;
     min-height: 60px;
     background-color: #F6F4F4;
@@ -204,8 +195,9 @@ footer.footer-right img {
 }
 
 .footer-center {
+  position: relative;
   float: left;
-  padding-left: 24.5%;
+  padding-left: 20.5%;
   padding-top: 0.5%;
 }
 
@@ -220,8 +212,6 @@ footer.footer-right img {
   margin: auto;
   text-align: center;
   padding-bottom: 5px;
-  /* margin-top: 50px;
-  margin-bottom: 50px; */
 }
 
 #browse .price {
@@ -229,13 +219,6 @@ footer.footer-right img {
   font-size: 22px;
   font-weight: bold;
 }
-
-/* CSS Validator says this is from unknown vendor so I commented out
-but it is Chrome specific... */
-/* #browse .card a:-webkit-any-link {
-  text-decoration: none;
-  color: black;
-} */
 
 #browse .card a:hover {
   text-decoration: underline;

@@ -8,7 +8,12 @@ function Product(name, image, price, quantity, glazing) {
 }
 
 function selectGlazing(product, glazing) {
-  $('#'+product.glazing).css("border", "2px solid #E1E8EE");
+  let glazings = ["none", "sugarmilk", "vanilla", "chocolate"];
+  glazings.forEach((item, i) => {
+    if (item !== glazing) {
+      $('#'+item).css("border", "2px solid #E1E8EE");
+    }
+  });
   product.glazing = glazing;
   $("#glazing_pic").attr("src", "images/glazing_"+glazing+".jpg");
   $('#'+glazing).css("border", "2px solid #86939E");
@@ -56,11 +61,14 @@ $(document).ready(function() {
   var currProduct = new Product(name, image, price, quantity, glazing);
 
   var cart = JSON.parse(sessionStorage.getItem("savedCart"));
-  if (cart === null) {
-    cart = [];
-  } else {
-    updateItemCount(cart);
-  }
+  // ternary operator
+  // reduces code length
+  cart === null ? cart=[] : updateItemCount(cart);
+  // if (cart === null) {
+  //   cart = [];
+  // } else {
+  //   updateItemCount(cart);
+  // }
 
   //Select Glazing
 	$("#none").click(function() {

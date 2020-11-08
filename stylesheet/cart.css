@@ -17,6 +17,7 @@ html, body {
   width: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  min-height: 100%;
 }
 
 .container {
@@ -32,6 +33,7 @@ html, body {
     float: left;
     margin-left: 8%;
     margin-top: 1%;
+    /* min-height: 200%; */
 }
 
 #no-item {
@@ -51,12 +53,9 @@ html, body {
     margin-top: 1.4%;
 }
 
-/* #checkout {
-    margin-left: 7.5%;
-} */
 
 #checkout {
-  margin-left: 71%;
+  /* margin-left: 66%; */
   margin-top: 5%;
   display: inline-block;
   background-color: #FFC600;
@@ -66,7 +65,11 @@ html, body {
   text-decoration: none;
   padding: 16px 21px;
   transition: all .5s;
+  float:right;
+  position: relative;
+  margin-right: 9%;
 }
+
 #checkout:hover {
   background-color: orange;
 }
@@ -93,19 +96,22 @@ html, body {
 }
 
 .cart-text {
+    position: absolute;
     margin-top: 0px;
     padding-top: 20px;
-    margin-left: 25px;
+    margin-left: 18%;
     color: #AAAAAA;
     font-size: 20px;
     float: left;
 }
 
 .cart-subtext {
+    position: absolute;
     margin-top: 0px;
     padding-top: 10px;
     color: #DDDDDD;
     font-size: 15px;
+    width: 300px;
 }
 
 .cart-num {
@@ -116,16 +122,18 @@ html, body {
     width: 20px;
     text-align: center;
     float: left;
-    margin-left: 40%;
+    margin-left: 50%;
 }
 
 
 .cart-cross {
     position: absolute;
+    float: left;
     padding-top: 38px;
     width: 18px;
-    float: right;
-    margin-left: 40%;
+    float: left;
+    margin-left: 60%;
+    cursor: pointer;
 }
 
 .main-summary {
@@ -148,11 +156,27 @@ html, body {
 }
 
 
-li {
+#summary li {
+    margin-top: 20px;
+    display: table;
+}
+
+#cart-items li {
     margin-top: 20px;
     display: table;
 }
 
 ol {
     list-style: none;
+}
+
+footer {
+    background-color: #F6F4F4;
+    width: 100%;
+    min-height: 60px;
+    padding-top: 1%;
+    margin-top: 20%;
+    left: 0;
+    bottom: 0;
+    position: relative;
 }
